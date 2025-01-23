@@ -1,23 +1,23 @@
-/* Updated CSS */
+
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  background: linear-gradient(to right, #86efce, #ecd73f);
+  background: linear-gradient(to right, #f5c731,#faf2b7);
   transition: background 0.5s ease;
 }
 
 /* Link and Button Hover Effects */
 a {
   text-decoration: none;
-  color: #00b09b;
+  color: #eec336;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #004d40;
+  color: #0a1110;
 }
 
 button, .login-btn, .signup-btn, .get-started-btn, .learn-more-btn {
@@ -71,7 +71,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: #00b09b;
+  background-color: #eec336;
 }
 
 header nav ul li a::after {
@@ -79,7 +79,7 @@ header nav ul li a::after {
   position: absolute;
   width: 0;
   height: 2px;
-  background: #00b09b;
+  background: #b07800;
   bottom: -5px;
   left: 0;
   transition: width 0.3s ease;
@@ -90,16 +90,18 @@ header nav ul li a:hover::after {
 }
 
 .auth-buttons .login-btn, .auth-buttons .signup-btn {
-  background-color: #00b09b;
-  color: #fff;
+  background-color: #ecd73f;
+  color: #1a1818;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
   transition: background-color 0.3s ease;
+  border: 1px solid  black;
+  
 }
 
 .auth-buttons .login-btn:hover, .auth-buttons .signup-btn:hover {
-  background-color: #004d40;
+  background-color: #ecd73f;
 }
 
 /* Hero Section */
@@ -132,12 +134,12 @@ header nav ul li a:hover::after {
 }
 
 .get-started-btn {
-  background-color: #00b09b;
-  color: #fff;
+  background-color: #ecd73f;
+  color: #161414;
   padding: 12px 24px;
   border-radius: 3px;
   font-size: 16px;
-  border: none;
+  border: 1px solid  black;
   cursor: pointer;
 }
 
@@ -175,15 +177,15 @@ header nav ul li a:hover::after {
 
 .learn-more-btn {
   background-color: #ecd73f;
-  color: #fff;
+  color: #070505;
   padding: 9px 16px;
   border-radius: 3px;
   font-size: 14px;
-  border: none;
+  border: .7px solid  black;
 }
 
 /* Footer */
-footer {
+/* footer {
   background-color: #333;
   color: #fff;
   padding: 30px 20px;
@@ -208,4 +210,57 @@ footer a {
 
 footer a:hover {
   color: #fff;
+} */
+/* Footer Section */
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 40px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+footer .footer-content .social-icons a {
+  color: #495057;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-content .social-icons a:hover {
+  color: #007bff;
+}
+
+footer .footer-content .links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content .links a {
+  text-decoration: none;
+  color: #495057;
+  transition: color 0.3s ease;
+}
+
+footer .footer-content .links a:hover {
+  color: #007bff;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  color: #6c757d;
 }
